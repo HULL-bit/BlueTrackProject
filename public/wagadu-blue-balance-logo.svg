@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" fill="none">
+  <!-- Cercle extérieur épais -->
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#1e40af" stroke-width="6"/>
+  
+  <!-- Balance de justice - Fulcrum (pivot central) -->
+  <line x1="60" y1="30" x2="60" y2="50" stroke="#D4AF37" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="60" cy="30" r="4" fill="#D4AF37"/>
+  
+  <!-- Barre horizontale de la balance -->
+  <line x1="40" y1="50" x2="80" y2="50" stroke="#D4AF37" stroke-width="3"/>
+  
+  <!-- Pans de la balance (bleus) -->
+  <ellipse cx="45" cy="58" rx="10" ry="4" fill="#1e40af" stroke="#1e40af" stroke-width="1"/>
+  <ellipse cx="75" cy="58" rx="10" ry="4" fill="#1e40af" stroke="#1e40af" stroke-width="1"/>
+  
+  <!-- Lignes de suspension des pans -->
+  <line x1="45" y1="50" x2="45" y2="58" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="75" y1="50" x2="75" y2="58" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Fond bleu pour les vagues -->
+  <rect x="12" y="65" width="96" height="43" fill="#3b82f6" rx="0"/>
+  
+  <!-- Vagues stylisées (3 lignes) -->
+  <path d="M15 75 Q25 70 35 75 T55 75 T75 75 T95 75" stroke="#60a5fa" stroke-width="3" fill="none"/>
+  <path d="M15 82 Q25 79 35 82 T55 82 T75 82 T95 82" stroke="#60a5fa" stroke-width="3" fill="none"/>
+  <path d="M15 89 Q25 86 35 89 T55 89 T75 89 T95 89" stroke="#60a5fa" stroke-width="3" fill="none"/>
+  
+  <!-- Texte WAGADU -->
+  <text x="120" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e40af" text-anchor="start">
+    WAGADU
+  </text>
+  
+  <!-- Texte BLUE BALANCE -->
+  <text x="120" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="medium" fill="#1e40af" text-anchor="start">
+    BLUE BALANCE
+  </text>
+</svg>

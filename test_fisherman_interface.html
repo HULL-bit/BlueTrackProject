@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Interface Pêcheur - Blue Track</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            border-radius: 15px;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 15px;
+            background: #f9fafb;
+        }
+        .test-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .test-title::before {
+            content: "🧪";
+            margin-right: 10px;
+        }
+        .role-test {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .role-card {
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #d1d5db;
+            background: white;
+        }
+        .role-card.fisherman {
+            border-color: #3b82f6;
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+        }
+        .role-card.admin {
+            border-color: #ef4444;
+            background: linear-gradient(135deg, #fef2f2, #fecaca);
+        }
+        .role-card.organization {
+            border-color: #10b981;
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+        }
+        .role-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .navigation-items {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .navigation-items li {
+            padding: 8px 12px;
+            margin: 4px 0;
+            background: rgba(255,255,255,0.7);
+            border-radius: 6px;
+            border-left: 3px solid #3b82f6;
+        }
+        .navigation-items li.hidden {
+            background: #f3f4f6;
+            color: #9ca3af;
+            border-left-color: #d1d5db;
+            text-decoration: line-through;
+        }
+        .welcome-message {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #f59e0b;
+            margin: 10px 0;
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .status.warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Test Interface Personnalisée - Blue Track</h1>
+            <p>Vérification des modifications pour les pêcheurs</p>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">Message de Bienvenue Personnalisé</div>
+            <div class="role-test">
+                <div class="role-card fisherman">
+                    <div class="role-name">👨‍🌾 Pêcheur</div>
+                    <div class="welcome-message">
+                        <strong>Bienvenue à bord Moussa Diop</strong><br>
+                        <small>Suivez vos sorties et restez connecté</small><br>
+                        <span class="status success">✅ Personnalisé</span>
+                    </div>
+                </div>
+                <div class="role-card admin">
+                    <div class="role-name">👨‍💼 Administrateur</div>
+                    <div class="welcome-message">
+                        <strong>Tableau de Bord Administrateur</strong><br>
+                        <small>Gestion complète de la plateforme Blue-Track</small><br>
+                        <span class="status success">✅ Standard</span>
+                    </div>
+                </div>
+                <div class="role-card organization">
+                    <div class="role-name">🏢 Organisation</div>
+                    <div class="welcome-message">
+                        <strong>Gestion de l'Organisation</strong><br>
+                        <small>Surveillance et coordination de votre flotte</small><br>
+                        <span class="status success">✅ Standard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">Navigation Selon le Rôle</div>
+            <div class="role-test">
+                <div class="role-card fisherman">
+                    <div class="role-name">👨‍🌾 Pêcheur - Navigation Simplifiée</div>
+                    <ul class="navigation-items">
+                        <li>📊 Tableau de Bord</li>
+                        <li>🗺️ Carte Marine</li>
+                        <li>📈 Historique</li>
+                        <li>🌤️ Météo</li>
+                        <li>👤 Profil</li>
+                        <li>🏢 Armateurs</li>
+                        <li>🏗️ Quais</li>
+                        <li>🖼️ Galerie Média</li>
+                        <li>❤️ Donations</li>
+                        <li>💬 Support</li>
+                        <li class="hidden">⚓ Balises (masqué)</li>
+                        <li class="hidden">🚢 Pirogues (masqué)</li>
+                    </ul>
+                    <div class="status success">✅ Interface simplifiée</div>
+                </div>
+                
+                <div class="role-card admin">
+                    <div class="role-name">👨‍💼 Admin - Accès Complet</div>
+                    <ul class="navigation-items">
+                        <li>📊 Tableau de Bord</li>
+                        <li>🗺️ Carte Marine</li>
+                        <li>🛰️ Pirogue GPS Tracking</li>
+                        <li>🚢 Gestion Flotte</li>
+                        <li>👥 Utilisateurs</li>
+                        <li>📈 Historique</li>
+                        <li>🌤️ Météo</li>
+                        <li>👤 Profil</li>
+                        <li>🏢 Armateurs</li>
+                        <li>⚓ Balises</li>
+                        <li>🚢 Pirogues</li>
+                        <li>🏗️ Quais</li>
+                        <li>🖼️ Galerie Média</li>
+                        <li>❤️ Donations</li>
+                        <li>💬 Support</li>
+                        <li>🛡️ Zones</li>
+                        <li>📊 Monitoring</li>
+                        <li>📝 Logs Système</li>
+                        <li>🧪 Tests Système</li>
+                    </ul>
+                    <div class="status success">✅ Accès complet</div>
+                </div>
+                
+                <div class="role-card organization">
+                    <div class="role-name">🏢 Organisation - Gestion Flotte</div>
+                    <ul class="navigation-items">
+                        <li>📊 Tableau de Bord</li>
+                        <li>🗺️ Carte Marine</li>
+                        <li>🛰️ Pirogue GPS Tracking</li>
+                        <li>🚢 Gestion Flotte</li>
+                        <li>👥 Utilisateurs</li>
+                        <li>📈 Historique</li>
+                        <li>🌤️ Météo</li>
+                        <li>👤 Profil</li>
+                        <li>🏢 Armateurs</li>
+                        <li>⚓ Balises</li>
+                        <li>🚢 Pirogues</li>
+                        <li>🏗️ Quais</li>
+                        <li>🖼️ Galerie Média</li>
+                        <li>❤️ Donations</li>
+                        <li>💬 Support</li>
+                    </ul>
+                    <div class="status success">✅ Gestion flotte</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">Résumé des Modifications</div>
+            <div style="background: #f0f9ff; padding: 20px; border-radius: 10px; border-left: 4px solid #0ea5e9;">
+                <h3 style="margin-top: 0; color: #0c4a6e;">✅ Modifications Appliquées</h3>
+                <ul style="color: #0c4a6e;">
+                    <li><strong>Message de bienvenue personnalisé :</strong> "Bienvenue à bord [Nom du pêcheur]"</li>
+                    <li><strong>Navigation simplifiée :</strong> Masquage des onglets "Balises" et "Pirogues" pour les pêcheurs</li>
+                    <li><strong>Interface adaptée :</strong> Les pêcheurs voient seulement les fonctionnalités qui les concernent</li>
+                    <li><strong>Rôles préservés :</strong> Les administrateurs et organisations gardent l'accès complet</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">Instructions de Test</div>
+            <div style="background: #fefce8; padding: 20px; border-radius: 10px; border-left: 4px solid #eab308;">
+                <ol style="color: #a16207;">
+                    <li>Connectez-vous avec un compte pêcheur</li>
+                    <li>Vérifiez que le message de bienvenue affiche "Bienvenue à bord [Nom]"</li>
+                    <li>Vérifiez que les onglets "Balises" et "Pirogues" ne sont pas visibles</li>
+                    <li>Testez avec un compte admin/organisation pour vérifier l'accès complet</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
