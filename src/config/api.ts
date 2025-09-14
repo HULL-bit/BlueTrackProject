@@ -1,7 +1,7 @@
 // Configuration de l'API
 export const API_CONFIG = {
   // URL de base de l'API Django
-  BASE_URL: 'http://localhost:8000/api',
+  BASE_URL: 'https://bluetrack-01.onrender.com/api',
   
   // Configuration Totarget
   TOTARGET: {
