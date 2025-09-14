@@ -196,7 +196,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs' / 'blue_track.log',
+            'filename': BASE_DIR / 'LOG' / 'blue_track.log',
         },
         'console': {
             'level': 'INFO',
