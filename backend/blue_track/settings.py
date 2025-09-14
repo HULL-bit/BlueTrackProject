@@ -144,16 +144,21 @@ REST_FRAMEWORK = {
     }
 
 # CORS settings
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000",
+#     "http://localhost:5000",
+#     "http://127.0.0.1:5000",
+#     "http://localhost:5001",
+#     "http://127.0.0.1:5001",
+#     "http://localhost:5002",
+#     "http://127.0.0.1:5002",
+# ]
+const API_URL = "https://bluetrack-01.onrender.com/";
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:5000",
-    "http://127.0.0.1:5000",
-    "http://localhost:5001",
-    "http://127.0.0.1:5001",
-    "http://localhost:5002",
-    "http://127.0.0.1:5002",
+    "https://bluetrack-01.onrender.com",
 ]
+
 
 # Pour le développement, autoriser toutes les origines
 CORS_ALLOW_ALL_ORIGINS = True
