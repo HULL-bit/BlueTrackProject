@@ -84,13 +84,14 @@ ASGI_APPLICATION = 'blue_track.asgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('PGDATABASE', default=config('DB_NAME', default='pirogue_smart')),
-        'USER': config('PGUSER', default=config('DB_USER', default='postgres')),
-        'PASSWORD': config('PGPASSWORD', default=config('DB_PASSWORD', default='password')),
-        'HOST': config('PGHOST', default=config('DB_HOST', default='localhost')),
-        'PORT': config('PGPORT', default=config('DB_PORT', default='5432')),
+        'NAME': 'pirogue_smart',
+        'USER': 'pirogue_smart_user',
+        'PASSWORD': 'HUlyj5YlQnGnTf9m9wN6jX707LG4Ctug',
+        'HOST': 'dpg-d32u60mmcj7s739uepj0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
+
 AUTH_USER_MODEL = "users.User"
 
 # Password validation
