@@ -154,7 +154,7 @@ REST_FRAMEWORK = {
 #     "http://localhost:5002",
 #     "http://127.0.0.1:5002",
 # ]
-const API_URL = "https://bluetrack-01.onrender.com/";
+
 CORS_ALLOWED_ORIGINS = [
     "https://bluetrack-01.onrender.com",
 ]
