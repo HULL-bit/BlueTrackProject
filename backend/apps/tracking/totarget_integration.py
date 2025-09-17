@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 # Configuration Totarget API
 TOTARGET_API_URL = getattr(settings, 'TOTARGET_API_URL', 'https://api.totarget.net:8108/api/send-command')
 TOTARGET_API_TOKEN = getattr(settings, 'TOTARGET_API_TOKEN', 'MJoNQoDJZuCROZZoaPHzzlxn4s5PPWFXF2Tjl3aC3htvi7geQLGz9A==')
-TOTARGET_WEBHOOK_URL = getattr(settings, 'TOTARGET_WEBHOOK_URL', 'https://bluetrack-01.onrender.com/api/tracking/webhook/totarget/)
+TOTARGET_WEBHOOK_URL = getattr(settings, 'TOTARGET_WEBHOOK_URL', 'https://bluetrack-01.onrender.com/api/tracking/webhook/totarget/')
 
 
 class TotargetGPSIntegration:
