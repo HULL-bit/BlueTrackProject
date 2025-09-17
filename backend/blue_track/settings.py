@@ -193,7 +193,7 @@ CELERY_RESULT_BACKEND = config('REDIS_URL', default='redis://localhost:6379')
 # Totarget GPS API Configuration
 TOTARGET_API_URL = config('TOTARGET_API_URL', default='https://api.totarget.net:8108/api/send-command')
 TOTARGET_API_TOKEN = config('TOTARGET_API_TOKEN', default='MJoNQoDJZuCROZZoaPHzzlxn4s5PPWFXF2Tjl3aC3htvi7geQLGz9A==')
-TOTARGET_WEBHOOK_URL = config('TOTARGET_WEBHOOK_URL', default='https://e2d3626604d2.ngrok-free.app/api/tracking/webhook/totarget/')
+TOTARGET_WEBHOOK_URL = config('TOTARGET_WEBHOOK_URL', default='https://bluetrack-01.onrender.com/api/tracking/webhook/totarget/')
 
 # Logging
 LOGGING = {
